@@ -31,6 +31,7 @@ export default function Form_media () {
                  placeholder='Digite a primeira nota.'
                  keyboardType='numeric'//determinado o tipo de teclado
                  onChangeText={(int) => setMedia1(int)}
+                 maxLength={4}
                  />
                  
                  
@@ -41,6 +42,7 @@ export default function Form_media () {
                    placeholder='Digite a segunda nota.'
                    keyboardType='numeric'//determinado o tipo de teclado
                    onChangeText={(int) => setMedia2(int)}
+                   maxLength={4}
                  />
 
 
@@ -51,6 +53,7 @@ export default function Form_media () {
                    placeholder='Digite a terceira nota.'
                    keyboardType='numeric'//determinado o tipo de teclado
                    onChangeText={(int) => setMedia3(int)}
+                   maxLength={4}
                  />
 
            <TouchableOpacity

@@ -31,6 +31,7 @@ export default function Form_valores () {
                  placeholder='Digite o primeiro valor.'
                  keyboardType='numeric'//determinado o tipo de teclado
                  onChangeText={(int) => setValor1(int)}
+                 maxLength={4}
                  />
                  
                  
@@ -41,6 +42,7 @@ export default function Form_valores () {
                    placeholder='Digite o segundo valor.'
                    keyboardType='numeric'//determinado o tipo de teclado
                    onChangeText={(int) => setValor2(int)}
+                   maxLength={4}
                  />
 
 
@@ -51,6 +53,7 @@ export default function Form_valores () {
                    placeholder='Digite o terceiro valor.'
                    keyboardType='numeric'//determinado o tipo de teclado
                    onChangeText={(int) => setValor3(int)}
+                   maxLength={4}
                  />
 
            <TouchableOpacity
