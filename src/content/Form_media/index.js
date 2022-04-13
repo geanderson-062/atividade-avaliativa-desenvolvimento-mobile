@@ -67,7 +67,7 @@ export default function Form_media () {
             <br></br> 
             <br></br> 
 
-            <View style={styles.cardResult}>
+          <View>
 			      	<Text style={styles.numberResult}>
 				     	Total:
 				    	{' '}
@@ -77,8 +77,8 @@ export default function Form_media () {
 			    		Média:
 			    		{' '}
 			    		{por.toFixed(1)}
-		   	 </Text>
-			</View>
+		   	    </Text>
+		    	</View>
 
 			{por < 5 && por > 0 && (
 				<Text style={styles.information}>Reprovado</Text>

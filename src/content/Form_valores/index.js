@@ -3,7 +3,7 @@ import { Text, TextInput , View, TouchableOpacity } from 'react-native'
 
 import styles from './style'; //importando o style
 
-export default function Form_media () {
+export default function Form_valores () {
 
   const [Valor1, setValor1] = useState('');
   const [Valor2, setValor2] = useState('');
@@ -11,10 +11,10 @@ export default function Form_media () {
   const [total, setTotal] = useState(0);
 
   const x = parseFloat(total);
-  const por = x / 3;
+  const por = x ;
 
   function gerarResultado() {
-      setTotal(Number(Media1) + Number(Media2) + Number(Media3));
+      setTotal(Number(Valor1) + Number(Valor2) + Number(Valor3));
       Keyboard.dismiss();
   }
 
@@ -27,37 +27,37 @@ export default function Form_media () {
                  {/*campo de digitar*/}
                  <TextInput 
                  style={styles.input}
-                 value={Media1}
-                 placeholder='Digite a primeira nota.'
+                 value={Valor1}
+                 placeholder='Digite o primeiro valor.'
                  keyboardType='numeric'//determinado o tipo de teclado
-                 onChangeText={(int) => setMedia1(int)}
+                 onChangeText={(int) => setValor1(int)}
                  />
                  
                  
                  {/*campo de digitar*/}
                  <TextInput
                    style={styles.input}
-                   value={Media2}
-                   placeholder='Digite a segunda nota.'
+                   value={Valor2}
+                   placeholder='Digite o segundo valor.'
                    keyboardType='numeric'//determinado o tipo de teclado
-                   onChangeText={(int) => setMedia2(int)}
+                   onChangeText={(int) => setValor2(int)}
                  />
 
 
                  {/*campo de digitar*/}
                  <TextInput
                    style={styles.input}   
-                   value={Media3}
-                   placeholder='Digite a terceira nota.'
+                   value={Valor3}
+                   placeholder='Digite o terceiro valor.'
                    keyboardType='numeric'//determinado o tipo de teclado
-                   onChangeText={(int) => setMedia3(int)}
+                   onChangeText={(int) => setValor3(int)}
                  />
 
            <TouchableOpacity
             style={styles.buttonCalculator}
-            activeOpacity={0.7}
+            activeOpacity={0.10}
             onPress={gerarResultado}>
-            <Text style={styles.textbuttonCalculator}>Calcular Média</Text>
+            <Text style={styles.textbuttonCalculator}>Calcular Valores</Text>
            </TouchableOpacity>
  
             </View>
@@ -67,29 +67,24 @@ export default function Form_media () {
             <br></br> 
             <br></br> 
 
-            <View style={styles.cardResult}>
-			      	<Text style={styles.numberResult}>
-				     	Total:
+          <View>
+			      <Text style={styles.numberResult}>
+				     	Soma dos Valores = 
 				    	{' '}
 				    	{total.toFixed(1)}
-			    	</Text>
-			    	<Text style={styles.numberResult}>
-			    		Média:
-			    		{' '}
-			    		{por.toFixed(1)}
-		   	 </Text>
-			</View>
+			     	</Text>
+		    	</View>
 
-			{por < 5 && por > 0 && (
-				<Text style={styles.information}>Reprovado</Text>
+			{por < 10 && por > 0 && (
+				<Text style={styles.information}>Este numero está entre o intervalo de  0 a 10</Text>
 			)}
 
-			{por >= 5 && por < 7 && (
-				<Text style={styles.information}>Recuperação</Text>
+			{por >= 11 && por < 20 && (
+				<Text style={styles.information}>Este numero está entre o intervalo de 11 a 20</Text>
 			)}
 
-			{por >= 7 && (
-				<Text style={styles.information}>Aprovado</Text>
+			{por >= 21 &&  (
+				<Text style={styles.information}>Este numero está entre o intervalo de 21 a infinito</Text>
 			)}
 
       </View>

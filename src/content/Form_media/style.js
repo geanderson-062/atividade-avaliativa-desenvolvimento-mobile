@@ -5,16 +5,6 @@ import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create( {
 
-   formContext:{
-
-      width: "100%",
-      bottom: 0,
-      alignItems: "center",//centralizando
-      borderTopLeftRadius: 30,//bordas arredondadas
-      borderTopRightRadius: 30,//bordas arredondadas 
-      marginTop: 30,
-    
-   },
 
    form:{
 
@@ -81,8 +71,11 @@ const styles = StyleSheet.create( {
       fontSize: 48,
       color: "black",
       fontWeight: "bold",
+     
 
   },
+
+
 
   });
 

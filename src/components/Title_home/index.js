@@ -22,7 +22,7 @@ export default function Title_Media() {
         <Icon name="mobile" size={260} color="#000" />
 
         <Text style={styles.textExplica}>Atividade solicitada pelo professor Rafael Soares no dia 05/04/2022 <br></br>
-       que vale a nota da prova Linguagem utilizada JavaScript com framework React-native e TypeScript.
+       que vale a nota da prova, Linguagem utilizada JavaScript com framework React-native e TypeScript.
         </Text>
 
       </View>

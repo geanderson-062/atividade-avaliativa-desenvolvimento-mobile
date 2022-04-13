@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native'
 
+
 // css style 
 
 const styles = StyleSheet.create( {
@@ -63,6 +64,25 @@ const styles = StyleSheet.create( {
       color: "#ffffff",
 
    },
+
+
+
+  numberResult:{ //resultado / cor e tamanho
+      
+      fontSize: 30,
+      color: "black",
+      fontWeight: "bold",
+      textAlign: "center",
+
+  },
+
+  information:{ //informação do que e para fazer
+
+      fontSize: 20,
+      color: "black",
+      fontWeight: "bold",
+
+  },
 
   });
 
